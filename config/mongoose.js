@@ -1,6 +1,6 @@
 
 const  mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://roshan123:Roshan123@cluster0.im4h1ke.mongodb.net/testRestApi');
+mongoose.connect('mongodb+srv://roshan_123:Roshan1102@cluster0.ugpv4zv.mongodb.net/test');
 
 
 
