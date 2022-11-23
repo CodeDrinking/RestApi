@@ -7,6 +7,7 @@ export const  {
     DEBUG_MODE
     // DB_URL
     ,JWT_SECRET,
-    REFRESH_TOKEN
+    REFRESH_TOKEN,
+    APP_URL
 
 }=process.env

@@ -5,6 +5,7 @@ import errorHandler from "./middleware/errorHandler"
 
 import routes from "./routes"
 import db from "./config/mongoose";
+import path from "path"
 
 const port = 8000;
 
@@ -19,8 +20,13 @@ const port = 8000;
 
 const app = express();
 
+
+global.appRoot= path.resolve(__dirname)
+
+app.use(express.urlencoded({extended:false})) // coz our json response having files
 app.use(express.json());
 app.use('/api' , routes);
+app.use('/uploads' , express.static('uploads'))
 
 
 app.use(errorHandler)
